@@ -1,0 +1,24 @@
+[package]
+name = "rust-api"
+version = "0.1.0"
+authors = ["Raina Pepe <raina.pepe@jbtec.com.br>"]
+edition = "2018"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-rt = "1.1.1"
+actix-web = "3"
+serde = "1.0.116"
+futures = "0.3.5"
+# mongodb = "1.1.1"
+
+[dependencies.mongodb]
+version = "1.1.0"
+default-features = false
+features = ["async-std-runtime"]
+
+[[bin]]
+name = "rust-api"
+# path = "main.rs"
